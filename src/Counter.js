@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment, incrementByAmount } from './features/counterSlice'
 
@@ -14,19 +14,19 @@ function Counter() {
 
     return (
         <div>
-            <h1>{count}</h1>
+            <h1>{ count }</h1>
             <button
                 aria-label="Increment value"
-                onClick={() => dispatch(increment())}>
+                onClick={ () => dispatch(increment()) }>
                 Increment
             </button>
             <button
                 aria-label="Decrement value"
-                onClick={() => dispatch(decrement())}>
+                onClick={ () => dispatch(decrement()) }>
                 Decrement
             </button>
-            <form onSubmit={(e) => byAmount(e)}>
-                <input type="number" onChange={(e) => setInput(e.target.value)} />
+            <form onSubmit={ (e) => byAmount(e) }>
+                <input type="number" onChange={ (e) => setInput(e.target.value) } />
                 <button type="submit">Submit</button>
             </form>
         </div>
