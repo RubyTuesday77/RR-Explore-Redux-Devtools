@@ -1,9 +1,14 @@
+// Import createSlice from Redux toolkit:
 import { createSlice } from '@reduxjs/toolkit'
 
+
+// Establish initial state:
 const initialState = {
     items: []
 }
 
+/* Build and export todoSlice function which adds actions to add (addTodo), remove (removeOne) and clear (clearTodo)
+list items: */
 export const todoSlice = createSlice({
     name: 'todos',
     initialState,
@@ -26,6 +31,9 @@ export const todoSlice = createSlice({
     }
 })
 
+
+// Export todoSlice actions:
 export const { addTodo, removeOne, clearTodo } = todoSlice.actions
 
+// Export todoSlice reducer as default export
 export default todoSlice.reducer

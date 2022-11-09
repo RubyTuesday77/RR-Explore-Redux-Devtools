@@ -1,6 +1,9 @@
-import Counter from './Counter'
-import Todo from './Todo'
 import './App.css';
+import Counter from './Counter'
+
+// Import Todo compontent and add to App:
+import Todo from './Todo'
+
 
 function App() {
   return (
